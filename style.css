@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+:root{
+    --primary-color:#00B0FF;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    max-width: 600px;
+    margin: auto;
+}
+
+.browse-link{
+    text-decoration: none;
+    color: var(--primary-color);
+    padding-left: 1rem;
+}
+
+.code-link{
+    text-decoration: none;
+    color: red;
+    padding-left: 1rem;
+}
+
+.fluid-container{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.center-container{
+    margin: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 600px;
+}
+
+.link-primary{
+    text-decoration: none;
+    background-color: var(--primary-color);
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius:0.5rem;
+    color:white;
+    width: max-content;
+    min-width: 140px;
+}
+.link-secondary{
+    text-decoration: none;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    width: max-content;
+    min-width: 140px;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+hr{
+    margin-top: 2rem;
+    margin-bottom: 2rem;;
+}
+
+.unordered-list{
+    list-style: none;
+}
+
+.inline-list{
+    display: inline-block;
+    margin: 0px 5px;
+}
+
+.nav{
+   background-color: var(--primary-color);
+  color: white;
+  padding-bottom: 0.5rem;
+  padding-right: 1rem;
+  padding-top: 0.2rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.nav-brand{
+    padding-left: 0.7rem;
+    padding-top: 1rem;
+}
+
+.nav-ul{
+    text-align: right;
+}
+
+.bold{
+    font-weight: 700;
+}
+.nav-list{
+    color:white;
+    text-decoration: none;
+    padding-bottom: 2rem;
+}
+
+img{
+   max-width: 300px;
+   margin: auto;
+   display: block;
+   height: auto;
+   background-origin: 2rem;
+   margin-top: 3rem;
+}
+
+.img-info{
+    text-align: center;
+    color:gray;
+    padding-top: 2rem;
+}
+
+.section-header{
+    max-width: 600px;
+}
+
+.normal-section{
+    margin-bottom: 3rem;
+    padding-top: 3rem;
+}
+
+.non-white-section{
+    background-color: #f2f2f2;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-top: 3rem;
+}
+
+.non-white-project-list{
+    background-color: #f2f2f2;
+}
+
+footer{
+    background-color: var(--primary-color);
+    padding-bottom: 1rem;
+    color: white;
+    text-align: center;
+    padding-top: 1rem;
+    border-top-right-radius: 1rem;
+    margin-top: 1rem;;
+}
+
+footer ul{
+    padding-inline-start: 0px;
+}
+
+.footer-list{
+    list-style: none;
+    display: inline-block;
+    padding: 0rem 0.5rem;
+}
