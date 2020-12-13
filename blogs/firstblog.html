@@ -8,30 +8,46 @@
 </head>
 <body>
     <div class="normal-section">
-        <h2  class="fluid-container section-header blog-header">How to host the html and css project on Netlify</h2>
-        <small class="fluid-container blog-date">11th November, 2020</small>
+        <h2  class="fluid-container section-header blog-header">How to develop MERN stack application</h2>
+        <small class="fluid-container blog-date">25th November, 2020</small>
         <p class="fluid-container">
-            <h4>Getting started on Netlify</h4>
-            In this tutorial, we will show you how easy it is to launch your site on Netlify. If you are not already a Netlify user, go ahead and sign up for free first. 
-            <h4>Step 1: Add Your New Site</h4>
-            Creating a new site on Netlify is simple. Once you’ve logged in, you’ll be taken to https://app.netlify.com. If you’re just starting out, there’s only one option, Click the Add A New Project button shown above.
-            <h4>Step 2: Link to Your GitHub (or supported version-control tool of choice)</h4>
-            Clicking “Add A New Project” brings you to this screen:
-            Be sure to push your repo to GitHub, so that all we’ll need to do is link Netlify to GitHub. Click the GitHub button
-            <h4>Step 3: Authorize Netlify</h4>
-            It’s time to allow Netlify and GitHub to talk to each other. Clicking the Authorize Application button will do just that. Like it says in the image below, Netlify doesn’t store your GitHub access token on our servers. If you’d like to know more about the permissions Netlify requests and why we need them, you can visit our documentation on Git provider permissions.
-            <h4>Step 4: Select Your Repo</h4>
-            Now that you’ve connected Netlify and GitHub, you can see a list of your Git repos. Choose the repo you’d like to deploy from the list.
-            <h4>Step 5: Configure Your Settings</h4>
-            Here you can configure your options. Make sure your publish directory is where your public site files are placed after building the site (e.g. dist) and your build command is whatever you run to build the site (e.g. npm run build). Then click the Deploy site button to continue.
-            <h4>Step 6: Build Your Site</h4>
-            Now it’s time to sit back and relax. You did your part; let Netlify take care of the rest. It’ll only take a minute.
-            <h4>Step 7: All Done</h4>
-            Once the build completes, your site is live! Head to the overview and you can see the URL of your newly published site.
-            Netlify automatically generated a name for your site. Let’s update that by visiting the settings tab and clicking “Change site name”:
-            There, that’s better. Looks pretty good, huh? Wasn’t that easy? To take it a step further, set up your custom domain.
+            MERN Stack is a combination of four technologies — MongoDB(M), Express(E), React(R), NodeJS(N).
+           <h4>Prerequisites</h4>
+           You need to have a basic understanding of all the four technologies that make up the MERN stack. You should also have npm (Node Package Manager) installed. 
+           This is NOT a tutorial on MongoDB, Express, React or NodeJS.
+           <h4>Step 1: Create a basic React Application.</h4>
+           In this step we will create a basic react application to get us started. To do that we will use the create-react-app package.
+            First install the create-react-app package by running the following command.
+            <br>
+            <br>
+            <center style="color: red;">npx create-react-app app_name</center>
+            <h4>Step 2: Install the dependencies.</h4>
+            Run the following command to install the dependencies. 
+            Do not forget to put ‘ — SAVE’ at the end as it will update the package.json file.
+            axios will be used to send requests to server to fetch or insert data.
+           body-parser parses the request bodies. We can get access to the information inside the request via req.body.
+          babel-cli will be used to compile files from the command line.
+          express is a web application framework for NodeJS.
+          mongoose is an ODM framework for MongoDB.
+          nodemon automatically restarts the server whenever the code changes.
+          react-bootstrap lets us use bootstrap components with React.
+          react-modal lets us create a modal dialog in React.
+         react-router-dom lets us use React router.
+        <h4>Step 3: Re-arrange the React application.</h4>
+        Now we will re-arrange our React Application.
+       First of all, create a client folder inside the root folder. The client-side code will reside inside this folder. Create a components folder and a css folder inside the client folder.
+       Now move the index.html file from public folder to client folder and change the extension of index.html from html to ejs. ‘ejs’ is a template engine that lets you generate html markup with plain JavaScript. We will talk more about it when we will configure the server.
+    You can now remove the public folder. Remove the references of manifest.json and favicon.ico from index.ejs.
+    <h4>Step 4: Server-side configurations.</h4>
+    We will now create the server and configure it. Create a new folder inside your root directory and call it server. This ensures absolute segregation between client-side and server-side code.
+Inside the server folder, create a server.js file. Copy and paste the following code inside the server.js.
+ <h4>Step 5: Bundle the front and back-end.</h4>
+ o run our MERN application, we need to bundle together the Reach front-end and Node back-end. We will use Webpack for this purpose.
+ <h4>Step 6: Integrating the database with back-end.</h4>
+ To create a Mongo database I used MLAB which is a database-as-a-service provider for MongoDB. 
+ <br>
+ Congratulations on creating the Mern stack application
 
-Congratulations on your new site, and thanks for using Netlify!
         </p>
      </div>
      <button><a class="button-link" href="../blog.html">Back</a></button>
